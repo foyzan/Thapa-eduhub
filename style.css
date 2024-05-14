@@ -77,7 +77,18 @@ li {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid_three__cols
+{
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* Module / reusable */
+
+.section_common__title
+{
+    font-size: 2rem;
+    padding: 2.4rem 0 1.2rem 0;
+}
 
 .btn {
     display: inline-block;
@@ -237,7 +248,43 @@ main {
 
 /* about section start */
 
+.section_about .grid
+{
+    gap: 6.4rem;
+}
 
+.section_about .about_div
+{
+    text-align: center;
+}
 
+.section_about .icon img
+{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.about_div .icon:hover > img
+{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+
+    background: linear-gradient(to right, #0575e6, #021b79);
+}
 /* about section end */
 
