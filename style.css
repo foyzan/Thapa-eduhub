@@ -81,6 +81,10 @@ li {
 {
     grid-template-columns: repeat(3, 1fr);
 }
+.grid_four__cols
+{
+    grid-template-columns: repeat(4, 1fr);
+}
 
 /* Module / reusable */
 
@@ -112,6 +116,13 @@ li {
 .section_common_subheading
 {
     color: var(--heading-color);
+}
+
+.text_right
+{
+    display: grid;
+    justify-items: end;
+    text-align: right;
 }
 /* states */
 
@@ -287,4 +298,119 @@ main {
     background: linear-gradient(to right, #0575e6, #021b79);
 }
 /* about section end */
+
+/* course section start */
+
+.section_course .grid
+{
+    gap: 3.2rem;
+
+    & .course_div
+    {
+        padding: 3.2rem;
+        
+    }
+
+    & .course_div:nth-child(2) i
+    {
+        color: rgb(12, 237, 12);
+        background-color: #183d3d;
+        
+    }
+    & .course_div:nth-child(3) i
+    {
+        color: rgb(12, 199, 237);
+        background-color: #bfe5f6;
+        
+    }
+    & .course_div:nth-child(4) i
+    {
+        color: rgb(237, 31, 12);
+        background-color: #fadadaee;
+        
+    }
+    & .course_div:nth-child(5) i
+    {
+        color: rgb(237, 121, 12);
+        background-color: #ffdeb3ee;
+        
+    }
+    & .course_div:nth-child(6) i
+    {
+        color: rgb(12, 68, 237);
+        background-color: #bbbaf4ee;
+        
+    }
+    & .course_div:nth-child(7) i
+    {
+        color: rgb(12, 173, 237);
+        background-color: #daedfaee;
+        
+    }
+
+    & .course_div:hover
+    {
+        box-shadow: var(--btn-box-shadow);
+    }
+}
+
+
+
+.course_div .icon i
+{
+    display: inline-block;
+    font-size: 2.4rem;
+    padding: 2.2rem 2.36rem;
+    background-color: var(--supporting-color);
+    color: rgb(255, 208, 0);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* course section end */
+
+
+/* why choose section start */
+
+.why_choose__div{
+    margin-top: 3.2rem;
+}
+.section_why__choose .grid
+{
+    gap: 9.6rem;
+}
+
+.text_heighlight
+{
+    width: 6rem;
+    aspect-ratio: 1;
+    background-color: var(--supporting-color);
+    color: var(--main-color);
+    display: grid;
+    place-content: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.why_choose_center, figure
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why_choose_center img
+{
+    width: 90%;
+    height: auto;
+}
+/* why choose section end */
+
 
